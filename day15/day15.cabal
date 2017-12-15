@@ -1,0 +1,41 @@
+-- This file has been generated from package.yaml by hpack version 0.20.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 38d2f2059dd21fbfd4230e8e690c52aaaf20a54b037f826043491ddccfb6eaa6
+
+name:           day15
+version:        0.1.0.0
+synopsis:       Short description of your package
+description:    Please see the README on Github at <https://github.com/githubuser/day15#readme>
+homepage:       https://github.com/githubuser/day15#readme
+bug-reports:    https://github.com/githubuser/day15/issues
+author:         Jérôme Mahuet
+maintainer:     jerome.mahuet@gmail.com
+copyright:      2017 Jérôme Mahuet
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+
+extra-source-files:
+    ChangeLog.md
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/day15
+
+executable test-day15-exe
+  main-is: Main.hs
+  hs-source-dirs:
+      app
+  ghc-options: -O2 -threaded -rtsopts -with-rtsopts=-N -Wall
+  build-depends:
+      async
+    , base >=4.7 && <5
+    , clock
+    , formatting
+  other-modules:
+      Paths_day15
+  default-language: Haskell2010
