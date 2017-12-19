@@ -1,5 +1,9 @@
 {-# LANGUAGE OverloadedStrings #-}
 
+-- stack ghc -- -O2 -threaded -fllvm -pgmlo /usr/local/Cellar/llvm/5.0.0/bin/opt -pgmlc /usr/local/Cellar/llvm/5.0.0/bin/llc app/Main.hs
+-- time app/Main +RTS -N4
+-- 400ms both parts
+
 module Main where
 
 import Control.Concurrent.Async
